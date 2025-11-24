@@ -1,0 +1,82 @@
+.weather-card {
+  width: 220px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.5s, color 0.5s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.weather-card.temp-cold {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #ffffff;
+}
+
+.weather-card.temp-mild {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #ffffff;
+}
+
+.weather-card.temp-warm {
+  background: linear-gradient(135deg, #fddb92, #d1fdff);
+  color: #333333;
+}
+
+.weather-card.temp-hot {
+  background: linear-gradient(135deg, #ff6a00, #ffb347);
+  color: #333333;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loc {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.condition {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.temp-row {
+  margin-top: 15px;
+}
+
+.temp {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.extra {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-btn {
+  font-size: 12px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  color: inherit;
+  transition: background 0.3s;
+}
+
+.small-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}

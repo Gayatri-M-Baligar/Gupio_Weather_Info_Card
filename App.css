@@ -1,0 +1,108 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: linear-gradient(180deg, #d98910, #075bd9);
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.weather-card {
+  border-radius: 16px;
+  padding: 20px;
+  color: rgb(199, 28, 65);
+  box-shadow: 0 8px 30px rgba(8, 10, 15, 0.25);
+  transition: transform 260ms ease, background 420ms ease;
+  margin: 0 auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loc {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.condition {
+  opacity: 0.95;
+  margin-top: 6px;
+}
+
+.icon-area {
+  width: 90px;
+  height: 90px;
+}
+
+.temp-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.extra {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  opacity: 0.95;
+}
+
+.controls-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.control-btn,
+.small-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.12);
+  color: rgb(231, 18, 217);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.small-btn {
+  margin-top: 12px;
+  margin-right: 8px;
+}
+
+.control-btn:hover,
+.small-btn:hover {
+  transform: scale(1.02);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 0.86rem;
+  color: #333;
+}
+
+@media (max-width: 420px) {
+  .temp {
+    font-size: 40px;
+  }
+  .icon-area {
+    width: 72px;
+    height: 72px;
+  }
+}
